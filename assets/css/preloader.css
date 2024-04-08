@@ -1,0 +1,63 @@
+
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0cf2;
+  z-index: 1000;
+}
+
+@-webkit-keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 2925.437744140625px;
+    stroke-dasharray: 2925.437744140625px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2925.437744140625px;
+  }
+}
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 2925.437744140625px;
+    stroke-dasharray: 2925.437744140625px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2925.437744140625px;
+  }
+}
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #3b2f2fa8;
+  }
+}
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #c206064c;
+  }
+}
+.svg-elem-1 {
+  -webkit-animation: animate-svg-stroke-1 1.5s
+      cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+    animate-svg-fill-1 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s both;
+  animation: animate-svg-stroke-1 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s
+      both,
+    animate-svg-fill-1 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s both;
+}
+
+body {
+  overflow: hidden;
+}
