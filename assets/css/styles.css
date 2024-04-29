@@ -587,3 +587,7 @@ video {
 .link:hover{
   color: red;
 }
+
+.bg-primary{
+  background-color: #000000 !important;
+}
