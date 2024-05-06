@@ -190,9 +190,44 @@ video {
 }
 /* Channel Stat */
 
+/* latest videos */
+.latest-video {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.latest-video h2 {
+  text-align: center;
+  color: #333;
+  font-size: 36px; /* Increase font size for heading */
+  margin-bottom: 20px;
+}
+
+.latest-video-item {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  animation: count-up 2s ease-in-out;
+}
+
+.latest-video-item:hover {
+  transform: scale(1.25);
+}
+
+.latest-video-item iframe {
+  border: 1px solid #ddd; /* Optional: Add a border to each video */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* latest videos */
+
+
+
 /* popular videos */
 .popular-video {
+  background-color: #f5f5f5;
   text-align: center;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
