@@ -88,7 +88,7 @@ function fetchPopularVideos() {
 function displayLatestVideos() {
   latestVideosContainer.innerHTML = ""; // Clear previous content
 
-  videos = ["1mlc6RT_JoU"];
+  videos = ["PW_ABREqaHI", "QfFCrUQMTXg", "GPPhZWameXc", "1mlc6RT_JoU"];
 
   videos.forEach((video, index) => {
     const videoDiv = document.createElement("div");
@@ -100,7 +100,7 @@ function displayLatestVideos() {
     } else {
       iframe.src = `https://www.youtube.com/embed/${video}`;
     }
-    iframe.width = "560";
+    iframe.width = "500";
     iframe.height = "315";
     iframe.frameborder = "0";
     iframe.allowFullscreen = true;
