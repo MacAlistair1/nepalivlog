@@ -86,9 +86,9 @@ function fetchPopularVideos() {
 }
 
 function displayLatestVideos() {
-  latestVideosContainer.innerHTML = ""; // Clear previous content
+  latestVideosContainer.innerHTML = "";
 
-  videos = ["PW_ABREqaHI", "QfFCrUQMTXg", "GPPhZWameXc", "1mlc6RT_JoU"];
+  videos = ["LbIIrsEdzbc","PW_ABREqaHI", "QfFCrUQMTXg", "GPPhZWameXc", "1mlc6RT_JoU"];
 
   videos.forEach((video, index) => {
     const videoDiv = document.createElement("div");
