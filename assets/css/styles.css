@@ -14,26 +14,51 @@ body {
 .right-frame {
   position: absolute;
   bottom: 0;
-  width: 260px;
-  height: 200px;
-  border: 2px solid white; 
-  box-sizing: border-box; 
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); 
-z-index: 999;
-margin-bottom: 20px;
+  width: 400px;
+  height: 250px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.left-frame:hover,
+.right-frame:hover {
+  opacity: 1;
 }
 
 .left-frame {
-  left: 50px;
+  left: -520px; /* Initial position outside the viewport */
+  animation: slideFromLeft 2s ease-in-out forwards;
+  background-image: url("../images/5lake1.jpg");
+  background-size: cover;
 }
 
 .right-frame {
-  right: 50px;
+  right: -520px; /* Initial position outside the viewport */
+  animation: slideFromRight 2s ease-in-out forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    left: -520px; /* Initial position outside the viewport */
+  }
+  to {
+    left: 20px; /* Final position */
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    right: -520px; /* Initial position outside the viewport */
+  }
+  to {
+    right: 20px; /* Final position */
+  }
 }
 
 video {
