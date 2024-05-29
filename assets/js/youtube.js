@@ -59,6 +59,10 @@ const latestVideosContainer = document.getElementById(
   "latest-videos-container"
 );
 
+const panchPokhariVideosContainer = document.getElementById(
+  "panch-pokhari-videos-container"
+);
+
 function fetchPopularVideos() {
   gapi.client
     .init({
@@ -88,7 +92,13 @@ function fetchPopularVideos() {
 function displayLatestVideos() {
   latestVideosContainer.innerHTML = "";
 
-  videos = ["LbIIrsEdzbc","PW_ABREqaHI", "QfFCrUQMTXg", "GPPhZWameXc", "1mlc6RT_JoU"];
+  videos = [
+    "LbIIrsEdzbc",
+    "PW_ABREqaHI",
+    "QfFCrUQMTXg",
+    "GPPhZWameXc",
+    "1mlc6RT_JoU",
+  ];
 
   videos.forEach((video, index) => {
     const videoDiv = document.createElement("div");
@@ -107,6 +117,31 @@ function displayLatestVideos() {
 
     videoDiv.appendChild(iframe);
     latestVideosContainer.appendChild(videoDiv);
+  });
+}
+
+function displayPanchPokhariVideos() {
+  panchPokhariVideosContainer.innerHTML = "";
+
+  videos = ["LbIIrsEdzbc", "PW_ABREqaHI"]; // Replace with your actual video IDs
+
+  videos.forEach((video, index) => {
+    const videoDiv = document.createElement("div");
+    videoDiv.classList.add("panch-pokhari-video-item"); // Add a custom class for the Panch Pokhari Hike videos
+
+    const iframe = document.createElement("iframe");
+    if (index == 0) {
+      iframe.src = `https://www.youtube.com/embed/${video}?autoplay=1&`;
+    } else {
+      iframe.src = `https://www.youtube.com/embed/${video}`;
+    }
+    iframe.width = "500";
+    iframe.height = "315";
+    iframe.frameborder = "0";
+    iframe.allowFullscreen = true;
+
+    videoDiv.appendChild(iframe);
+    panchPokhariVideosContainer.appendChild(videoDiv);
   });
 }
 
@@ -143,6 +178,7 @@ function displayVideos() {
   });
 }
 
+// displayPanchPokhariVideos();
 displayLatestVideos();
 displayVideos();
 
