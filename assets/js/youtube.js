@@ -110,7 +110,7 @@ function displayLatestVideos() {
     } else {
       iframe.src = `https://www.youtube.com/embed/${video}`;
     }
-    iframe.width = "500";
+    iframe.width = "450";
     iframe.height = "315";
     iframe.frameborder = "0";
     iframe.allowFullscreen = true;
