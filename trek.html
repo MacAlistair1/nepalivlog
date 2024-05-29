@@ -33,7 +33,47 @@
       Nepali Vlog | Explore, Experience, Embrace : Unveils the heart of Nepal
     </title>
 
-  
+    <style>
+      /* Additional styles specific to the trekking itinerary plan page */
+      /* Add your custom styles here */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .itinerary {
+        margin-top: 50px;
+      }
+
+      .itinerary h2 {
+        text-align: center;
+        color: #333;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .itinerary-item {
+        margin-bottom: 20px;
+      }
+
+      .itinerary-item h3 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .itinerary-item p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+    </style>
   </head>
 
   <body>
@@ -63,22 +103,6 @@
       </svg>
     </div>
 
-    <div
-      class="parallax-container"
-      id="home"
-      style="background-image: url('assets/images/5pokhari.jpg')"
-    >
-      <!-- <div class="left-frame"></div>
-      <div class="right-frame"></div> -->
-
-      <video autoplay loop muted poster="assets/images/waterfall.jpg">
-        <source src="assets/shot/waterfall.mp4" type="video/mp4" />
-      </video>
-
-      <div class="scroll-icon" onclick="scrollToSection('profile')"></div>
-      <div class="scroll-text" onclick="scrollToSection('profile')">Scroll</div>
-    </div>
-
     <nav class="fixed-menu">
       <ul>
         <li><a href="/">Home</a></li>
@@ -95,265 +119,36 @@
       </ul>
     </nav>
 
-    <main>
-      <section class="channel-stats" id="channel">
-        <h2>Channel Stats</h2>
-        <div class="stats-container">
-          <div class="stat count">
-            <h3>Views</h3>
-            <p id="viewCount">Loading...</p>
-          </div>
-          <div class="stat count">
-            <h3>Subscribers</h3>
-            <p id="subscriberCount">Loading...</p>
-          </div>
-          <div class="stat count">
-            <h3>Videos</h3>
-            <p id="videoCount">Loading...</p>
-          </div>
+    <!-- Main content -->
+    <div class="container">
+      <div class="itinerary">
+        <h2>Trekking Itinerary Plan</h2>
+        <div class="itinerary-item">
+          <h3>Day 1: Arrival in Base Camp</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a
+            lectus at nunc blandit ultricies.
+          </p>
         </div>
-
-        <div class="subscribe-container">
-          <div
-            class="g-ytsubscribe"
-            data-channelid="UCWaW8kOPn906WIcDj5CpwDQ"
-            data-layout="full"
-            data-count="default"
-          ></div>
+        <div class="itinerary-item">
+          <h3>Day 2: Acclimatization Day</h3>
+          <p>
+            Quisque consequat justo vitae enim ultricies placerat. Fusce
+            malesuada, neque vitae luctus.
+          </p>
         </div>
-      </section>
-
-      <!-- <section class="panch-pokhari-video" id="panch-pokhari-video">
-        <br />
-        <h2>Panch Pokhari Hike: Exploring the Holy Lakes</h2>
-        <div id="panch-pokhari-videos-container"></div>
-        <br>
-      </section> -->
-
-      <section class="latest-video" id="latest-video">
-        <br />
-        <h2>The Kerala Series: A Journey Through God's Own Country</h2>
-        <div id="latest-videos-container"></div>
-      </section>
-
-      <section class="popular-video" id="popular-video">
-        <h2>Most Popular Videos</h2>
-        <div id="videos-container"></div>
-      </section>
-
-      <section class="social-profiles" id="profile">
-        <h2>Social Links</h2>
-        <div class="profile-links">
-          <a
-            class="icon fade"
-            href="https://www.facebook.com/macalistairvlogs"
-            target="_blank"
-          >
-            <img src="assets/icon/fb.svg" alt="Facebook" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.instagram.com/macalistairvlogs"
-            target="_blank"
-          >
-            <img src="assets/icon/insta.svg" alt="Instagram" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.twitter.com/_nepalivlog"
-            target="_blank"
-          >
-            <img src="assets/icon/twitter.svg" alt="Twitter X" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.tiktok.com/@_nepalivlog"
-            target="_blank"
-          >
-            <img src="assets/icon/tiktok.svg" alt="Tiktok" />
-          </a>
+        <div class="itinerary-item">
+          <h3>Day 3: Trek to High Camp</h3>
+          <p>
+            Integer sodales felis vitae gravida rhoncus. Aenean fringilla ex sed
+            lectus dapibus, id aliquet dolor.
+          </p>
         </div>
+        <!-- Add more itinerary items as needed -->
+      </div>
+    </div>
 
-        <div class="qr-code-container">
-          <div class="qr-code-placeholder">
-            <img src="assets/icon/qr.png" alt="QR Code" />
-          </div>
-          <p class="scan-me-text">Scan Me</p>
-        </div>
-      </section>
-
-      <section
-        class="social-profiles"
-        id="other-channels"
-        style="background-color: #ffffff"
-      >
-        <h2>Our Other Channels</h2>
-        <div class="profile-links" style="margin-top: 30px !important">
-          <a
-            class="icon fade"
-            href="https://youtube.com/@freedroneshot"
-            target="_blank"
-          >
-            <img src="assets/icon/drone.png" alt="Free Drone Shots Nepal" />
-          </a>
-          <a
-            class="icon"
-            href="https://youtube.com/@pahiloframes"
-            target="_blank"
-          >
-            <img src="assets/icon/pahilo.png" alt="Pahilo Frames Production" />
-          </a>
-          <a
-            class="icon"
-            href="https://youtube.com/@nepali.shorts"
-            target="_blank"
-          >
-            <img src="assets/icon/nepali-shorts.png" alt="Nepali Shorts" />
-          </a>
-        </div>
-      </section>
-
-      <section class="photo-gallery" id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/seen-from-mardi.jpg"
-              alt="2 Mountains Seen from Mardi"
-            />
-            <div class="image-description">
-              Annapurna South &amp; Hiuchuli Himal Seen From Mardi Base Camp
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/dupcheshwor.jpg"
-              alt="Dupcheshwor Mahadev"
-            />
-            <div class="image-description">
-              Famous Dupcheshwor Mahadev, Nuwakot
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/sanga.jpg" alt="Sanga Mahadevsthan" />
-            <div class="image-description">
-              143 ft. Tall Shiv Statue, Sanga Mahadevsthan
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/1-min.png" alt="Sunrise from Nala Gadhi" />
-            <div class="image-description">
-              Beautiful Sunrise from Nala Gadhi, Banepa-1,Kavre
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/3-min.png" alt="Kalinchowk Kuri Village" />
-            <div class="image-description">Over the clouds, Kalinchowk</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/4.jpg" alt=">Basuki, Ugrachandi, Banepa" />
-            <div class="image-description">Basuki, Ugrachandi, Banepa</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/5.jpg" alt="Tindhare Waterfall" />
-            <div class="image-description">
-              Tindhare Waterfall is a waterfall located in Roshi Rural
-              Municipality of Kavrepalanchok District in Nepal. It has a height
-              of about 300 metres. The name of this waterfall is 'Tindhare' as
-              it falls from the hill of Mahabharat Range in the form of three
-              streams.
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/6-min.png" alt="Mt. Annapurna" />
-            <div class="image-description">Mt. Annapurna from Poon Hill</div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/7-min.png"
-              alt="Chandrashila, Utarakhand"
-            />
-            <div class="image-description">
-              Beautiful scene At level 3690m, Chandrashila, Utarakhand
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/8-min.png"
-              alt="Swayambhunath, Kathmandu"
-            />
-            <div class="image-description">
-              Perched on top of Semgu Hill, located on the outskirts of the
-              Kathmandu Valley, the Swayambhu Temple is one of the most
-              important religious shrines in Nepal.
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/9-min.png" alt="Phewa Lake, Pokhara" />
-            <div class="image-description">
-              Phewa Lake/Fewa Lake is a freshwater lake in Nepal formerly called
-              Baidam Tal located in the south of the Pokhara Valley that
-              includes Pokhara city and parts of Sarangkot and Kaskikot.
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/2-min.png"
-              alt="Sunset from Narayanthan, Bethanchowk, Kavre"
-            />
-            <div class="image-description">
-              Cinematic Sunset from Bethanchok Narayansthan, Kavre
-            </div>
-          </div>
-        </div>
-
-        <div class="image-popup">
-          <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <img class="popup-img" src="" alt="Popup Image" />
-            <div class="image-description-overlay">
-              <p id="popupDescription"></p>
-            </div>
-            <div class="navigation">
-              <span class="prev-btn">&#10094;</span>
-              <span class="next-btn">&#10095;</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <h2>About Us</h2>
-
-        <div class="about-content">
-          <div class="about-left">
-            <div id="typewriter">
-              Welcome to <b>Nepali Vlog</b>, and We're thrilled to share our
-              adventures with you. <br />
-            </div>
-          </div>
-          <div class="about-right">
-            <img src="assets/icon/sticker.png" alt="Sticker" class="sticker" />
-          </div>
-        </div>
-      </section>
-
-      <section class="maps" id="map">
-        <h2>place we've covered</h2>
-        <iframe
-          src="https://www.google.com/maps/d/embed?mid=1eTpxH6pfNpnK5lZ2_TguAG4MJTvzzTA&ehbc=2E312F&noprof=1"
-          width="640"
-          height="480"
-        ></iframe>
-      </section>
-    </main>
-
-    <footer class="footer footer-hidden">
+    <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
           <h3>About Us</h3>
@@ -394,8 +189,7 @@
       </div>
     </footer>
 
-    <div style="margin-top: -23px">
-      <!--[-->
+    <div>
       <div class="bg-primary" style="margin-top: 0px; height: 23px"></div>
       <div class="bg-primary" style="margin-top: 1px; height: 22px"></div>
       <div class="bg-primary" style="margin-top: 2px; height: 21px"></div>
@@ -426,23 +220,5 @@
     <script src="assets/js/preloader.js"></script>
 
     <script src="assets/js/header.js"></script>
-
-    <script src="assets/js/youtube.js"></script>
-
-    <script src="assets/js/maps.js"></script>
-
-    <script src="assets/js/footer.js"></script>
-
-    <script src="assets/js/count-up.js"></script>
-
-    <script src="assets/js/script.js"></script>
-
-    <!-- third party scripts -->
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- third party scripts -->
-
-    <script src="assets/js/photo-slider.js"></script>
   </body>
 </html>

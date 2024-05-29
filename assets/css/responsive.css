@@ -1,0 +1,82 @@
+/* For screens smaller than 768px (tablets and phones) */
+@media only screen and (max-width: 768px) {
+  .left-frame,
+  .right-frame {
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto; /* Allow height to adjust proportionally */
+    max-width: 300px; /* Limit maximum width for smaller screens */
+    max-height: 200px; /* Limit maximum height for smaller screens */
+    margin: 10px auto; /* Center the frames */
+    left: 0; /* Reset the position for smaller screens */
+    right: 0; /* Reset the position for smaller screens */
+    bottom: 10px; /* Adjust bottom spacing */
+  }
+
+  .latest-video-item iframe,
+  .panch-pokhari-video-item iframe,
+  .video-item iframe {
+    max-width: 100%; /* Make videos responsive */
+    height: auto; /* Allow height to adjust proportionally */
+  }
+
+  .gallery-item img {
+    width: 100%; /* Make gallery images responsive */
+    height: auto; /* Allow height to adjust proportionally */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack about content vertically */
+  }
+
+  .about-left div {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Add top margin */
+    text-align: center; /* Center align text */
+  }
+
+  .about-right {
+    width: 100%; /* Make about right section full width */
+    margin-top: 20px; /* Add top margin */
+  }
+
+  .maps iframe {
+    width: 100%; /* Make maps responsive */
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+/* For screens larger than 768px (desktops and larger screens) */
+@media only screen and (min-width: 769px) {
+  /* Header styles */
+  .latest-video h2,
+  .panch-pokhari-video h2,
+  .popular-video h2,
+  .social-profiles h2,
+  .photo-gallery h2,
+  .about h2,
+  .maps h2 {
+    font-size: 36px; /* Reset font size for larger screens */
+  }
+
+  /* Navigation menu styles */
+  .fixed-menu li {
+    margin: 0 70px; /* Reset margin for menu items */
+    font-size: 18px; /* Reset font size for larger screens */
+  }
+
+  /* Footer styles */
+  .footer-section {
+    max-width: 300px; /* Reset maximum width for larger screens */
+  }
+
+  .footer-section ul li {
+    margin-left: 20px; /* Reset margin for footer items */
+    font-size: 16px; /* Reset font size for larger screens */
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
