@@ -32,3 +32,12 @@ function typeWriter() {
 typeWriter();
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+const leftFrameClick = () => {
+  window.location.href="https://youtu.be/yR05LnrjVRk";
+}
+
+const rightFrameClick = () => {
+  
+}
