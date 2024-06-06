@@ -33,11 +33,10 @@ typeWriter();
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-
 const leftFrameClick = () => {
-  window.location.href="https://youtu.be/yR05LnrjVRk";
-}
+  window.location.href = "https://youtu.be/yR05LnrjVRk";
+};
 
 const rightFrameClick = () => {
-  
-}
+  window.location.href = "https://youtu.be/nR0R5QTBz_w";
+};

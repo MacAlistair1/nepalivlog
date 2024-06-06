@@ -41,6 +41,8 @@ body {
 .right-frame {
   right: -520px; /* Initial position outside the viewport */
   animation: slideFromRight 2s ease-in-out forwards;
+  background-image: url("../images/panchpokhari.jpg");
+  background-size: cover;
 }
 
 @keyframes slideFromLeft {
