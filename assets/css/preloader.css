@@ -1,5 +1,3 @@
-
-
 .preloader {
   display: flex;
   justify-content: center;
@@ -9,7 +7,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0c0c0cf2;
+  background-color: #0c0c0c95;
   z-index: 1000;
 }
 
@@ -38,7 +36,7 @@
     fill: transparent;
   }
   100% {
-    fill: #3b2f2fa8;
+    fill: #11bd17a8;
   }
 }
 @keyframes animate-svg-fill-1 {
@@ -46,7 +44,7 @@
     fill: transparent;
   }
   100% {
-    fill: #c206064c;
+    fill: #39da1594;
   }
 }
 .svg-elem-1 {
@@ -56,6 +54,7 @@
   animation: animate-svg-stroke-1 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s
       both,
     animate-svg-fill-1 0.4s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s both;
+    color: brown;
 }
 
 body {
