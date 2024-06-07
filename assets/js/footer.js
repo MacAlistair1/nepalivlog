@@ -2,8 +2,8 @@ document.addEventListener("scroll", function () {
   // Get the scroll position
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-  // Get the offset of the photo gallery section
-  var gallerySectionOffset = document.getElementById("gallery").offsetTop;
+  // Get the offset of the photo map section
+  var gallerySectionOffset = document.getElementById("map").offsetTop;
 
   // Select the footer element
   var footer = document.querySelector(".footer");
