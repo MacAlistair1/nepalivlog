@@ -103,103 +103,32 @@
 
 /* For screens larger than 768px (desktops and larger screens) */
 @media only screen and (min-width: 769px) {
-  .preloader {
+  /* Header styles */
+  .latest-video h2,
+  .panch-pokhari-video h2,
+  .popular-video h2,
+  .social-profiles h2,
+  .photo-gallery h2,
+  .about h2,
+  .maps h2 {
+    font-size: 36px; /* Reset font size for larger screens */
+  }
+  /* Navigation menu styles */
+  .fixed-menu li {
+    margin: 0 70px; /* Reset margin for menu items */
+    font-size: 18px; /* Reset font size for larger screens */
+  }
+  /* Footer styles */
+  .footer-section {
+    max-width: 300px; /* Reset maximum width for larger screens */
+  }
+  .footer-section ul li {
+    margin-left: 20px; /* Reset margin for footer items */
+    font-size: 16px; /* Reset font size for larger screens */
+  }
+  video {
     width: 100%;
     height: 100%;
-  }
-
-  .preloader svg {
-    width: 90%;
-  }
-
-  .navbar {
-    display: none !important;
-  }
-
-  .fixed-menu .logo {
-    margin-right: 28px !important;
-  }
-
-  .scroll-text {
-    left: 46.8% !important;
-  }
-
-  .scroll-icon {
-    left: 42% !important;
-  }
-
-  .latest-video h2 {
-    font-size: 16px !important;
-    margin-left: 13px;
-  }
-
-  .channel-stats .subscribe-container {
-    padding: 20px;
-  }
-
-  .profile-links {
-    display: ruby !important;
-    text-align: center;
-  }
-
-  .qr-code-placeholder {
-    width: auto !important;
-  }
-
-  .qr-code-placeholder img {
-    width: 200px !important;
-  }
-
-  .gallery-item {
-    width: 100% !important;
-  }
-
-  .left-frame,
-  .right-frame {
-    width: 100px !important;
-    height: 60px !important;
-    border-radius: 7px !important;
-  }
-
-  .latest-video-item iframe,
-  .panch-pokhari-video-item iframe,
-  .video-item iframe {
-    max-width: 100%; /* Make videos responsive */
-    height: auto; /* Allow height to adjust proportionally */
-  }
-
-  .gallery-item img {
-    width: 100%; /* Make gallery images responsive */
-    height: auto; /* Allow height to adjust proportionally */
-  }
-
-  .about-content {
-    display: block !important;
-  }
-
-  .about-left {
-    width: 100% !important;
-  }
-
-  .about-right {
-    width: 100% !important;
-  }
-
-  .sticker {
-    max-width: 80% !important;
-  }
-
-  .maps {
-    height: auto !important;
-  }
-
-  .maps iframe {
-    width: 100% !important;
-    height: 300px !important;
-  }
-
-  .footer-content {
-    display: ruby !important;
-    text-align: center;
+    object-fit: cover;
   }
 }
