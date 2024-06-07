@@ -18,4 +18,4 @@ setTimeout(() => {
   socialIcon.forEach((el) => {
     el.style.animation = "scaleAnimation 2s ease-in-out infinite";
   });
-}, 800);
+}, 1500);

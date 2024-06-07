@@ -7,8 +7,10 @@ document.addEventListener("scroll", function () {
 
   if (window.scrollY > scrollThreshold) {
     fixedMenu.style.display = "flex";
+    fixedMenu.classList.add('navbar');
   } else {
     fixedMenu.style.display = "none";
+    fixedMenu.classList.remove('navbar');
   }
 });
 

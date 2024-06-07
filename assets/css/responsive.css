@@ -1,15 +1,61 @@
 /* For screens smaller than 768px (tablets and phones) */
 @media only screen and (max-width: 768px) {
+  .preloader {
+    width: 100%;
+    height: 100%;
+  }
+
+  .preloader svg {
+    width: 90%;
+  }
+
+  .navbar {
+    display: grid !important;
+  }
+
+  .fixed-menu .logo {
+    margin-right: 28px !important;
+  }
+
+  .scroll-text {
+    left: 46.8% !important;
+  }
+
+  .scroll-icon {
+    left: 42% !important;
+  }
+
+  .latest-video h2 {
+    font-size: 16px !important;
+    margin-left: 13px;
+  }
+
+  .channel-stats .subscribe-container {
+    padding: 20px;
+  }
+
+  .profile-links {
+    display: ruby !important;
+    text-align: center;
+  }
+
+  .qr-code-placeholder {
+    width: auto !important;
+  }
+
+  .qr-code-placeholder img {
+    width: 200px !important;
+  }
+
+  .gallery-item {
+    width: 100% !important;
+  }
+
   .left-frame,
   .right-frame {
-    width: 90%; /* Adjust width to fit smaller screens */
-    height: auto; /* Allow height to adjust proportionally */
-    max-width: 300px; /* Limit maximum width for smaller screens */
-    max-height: 200px; /* Limit maximum height for smaller screens */
-    margin: 10px auto; /* Center the frames */
-    left: 0; /* Reset the position for smaller screens */
-    right: 0; /* Reset the position for smaller screens */
-    bottom: 10px; /* Adjust bottom spacing */
+    width: 100px !important;
+    height: 60px !important;
+    border-radius: 7px !important;
   }
 
   .latest-video-item iframe,
@@ -25,23 +71,33 @@
   }
 
   .about-content {
-    flex-direction: column; /* Stack about content vertically */
+    display: block !important;
   }
 
-  .about-left div {
-    margin-left: 0; /* Remove left margin */
-    margin-top: 10px; /* Add top margin */
-    text-align: center; /* Center align text */
+  .about-left {
+    width: 100% !important;
   }
 
   .about-right {
-    width: 100%; /* Make about right section full width */
-    margin-top: 20px; /* Add top margin */
+    width: 100% !important;
+  }
+
+  .sticker {
+    max-width: 80% !important;
+  }
+
+  .maps {
+    height: auto !important;
   }
 
   .maps iframe {
-    width: 100%; /* Make maps responsive */
-    height: 300px; /* Adjust height for smaller screens */
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .footer-content {
+    display: ruby !important;
+    text-align: center;
   }
 }
 
