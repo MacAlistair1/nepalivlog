@@ -9,6 +9,10 @@
     width: 90%;
   }
 
+  .parallax-container {
+    width: 104%;
+  }
+
   .navbar {
     display: none !important;
   }
@@ -88,6 +92,7 @@
 
   .maps {
     height: auto !important;
+    width: 104% !important;
   }
 
   .maps iframe {
@@ -98,6 +103,10 @@
   .footer-content {
     display: ruby !important;
     text-align: center;
+  }
+
+  .lines {
+    width: 104% !important;
   }
 }
 
