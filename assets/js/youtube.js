@@ -92,6 +92,7 @@ function fetchPopularVideos() {
 function displayLatestVideos() {
   latestVideosContainer.innerHTML = "";
   videos = [
+    "gQzVddTn-S8",
     "tNt-tt6eRYw",
     "LbIIrsEdzbc",
     "PW_ABREqaHI",
