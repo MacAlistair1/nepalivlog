@@ -34,7 +34,7 @@ body {
 .left-frame {
   left: -520px; /* Initial position outside the viewport */
   animation: slideFromLeft 2s ease-in-out forwards;
-  background-image: url("../images/5lake1.jpg");
+  background-image: url("../images/tintale.jpg");
   background-size: cover;
 }
 

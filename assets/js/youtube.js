@@ -92,13 +92,14 @@ function fetchPopularVideos() {
 function displayLatestVideos() {
   latestVideosContainer.innerHTML = "";
   videos = [
-    "gQzVddTn-S8",
-    "tNt-tt6eRYw",
-    "LbIIrsEdzbc",
-    "PW_ABREqaHI",
-    "QfFCrUQMTXg",
-    "GPPhZWameXc",
     "1mlc6RT_JoU",
+    "GPPhZWameXc",
+    "QfFCrUQMTXg",
+    "PW_ABREqaHI",
+    "LbIIrsEdzbc",
+    "tNt-tt6eRYw",
+    "gQzVddTn-S8",
+    "eosUO2jq99Q",
   ];
 
   videos.forEach((video, index) => {
