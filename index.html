@@ -35,6 +35,8 @@
   </head>
 
   <body>
+    <canvas id="canvas" width="3360" height="1046"></canvas>
+
     <div class="preloader">
       <svg
         width="576.7210083007812"
@@ -443,14 +445,25 @@
     <script>
       const logo = document.getElementById("logo-img");
       const sticker = document.getElementById("sticker-img");
+      var head = document.getElementsByTagName("head")[0];
 
       const date = new Date();
       if (date.getMonth() == 6 && date.getDate() == 29) {
         logo.src = "assets/icon/bday/logo.png";
         sticker.src = "assets/icon/bday/sticker.png";
+
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "assets/js/bday-particle.js";
+        head.appendChild(script);
       } else if (date.getMonth() == 9 && date.getDate() == 20) {
         logo.src = "assets/icon/bday/logo.png";
         sticker.src = "assets/icon/bday/sticker.png";
+
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "assets/js/bday-particle.js";
+        head.appendChild(script);
       } else {
         logo.src = "assets/icon/logo.png";
         sticker.src = "assets/icon/sticker.png";
