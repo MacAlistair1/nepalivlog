@@ -1,24 +1,33 @@
-var viewCount = null;
-var subscriberCount = null;
-var videoCount = null;
+let viewCount = null;
+let subscriberCount = null;
+let videoCount = null;
+let txt = "";
 
 const viewCountElement = document.getElementById("viewCount");
 const subscriberCountElement = document.getElementById("subscriberCount");
 const videoCountElement = document.getElementById("videoCount");
 
+const baseUrl =
+  "https://raw.githubusercontent.com/MacAlistair1/scrap-data/main";
+
 // Fetch the JSON data
-fetch("assets/json/channel.json")
+fetch(`${baseUrl}/channel_info.json`)
   .then((response) => response.json())
-  .then((data) => {
-    const channel = data.items[0];
+  .then(async (data) => {
+    viewCount = data.views;
+    subscriberCount = data.subscribers;
+    videoCount = data.videos;
+    txt = await data.description;
 
-    viewCount = channel.statistics.viewCount;
-    subscriberCount = channel.statistics.subscriberCount;
-    videoCount = channel.statistics.videoCount;
-
+    txt = txt.replace(
+      "Welcome to Nepali Vlog, and We're thrilled to share our adventures with you.",
+      ""
+    );
     countUp(viewCountElement, viewCount, 7000); // Adjust duration as needed
     countUp(subscriberCountElement, subscriberCount, 7000);
     countUp(videoCountElement, videoCount, 7000);
+
+    typeWriter();
   })
   .catch((error) => {
     console.log("Error fetching channel data:", error);
@@ -186,3 +195,32 @@ displayVideos();
 
 // Load the YouTube API client
 //  gapi.load('client', fetchPopularVideos);
+
+let i = 0;
+let speed = 10;
+
+function typeWriter() {
+  if (i < txt.length) {
+    const char = txt.charAt(i);
+    if (char === "\n") {
+      document.getElementById("typewriter").innerHTML += "<br>";
+    } else if (char === "#") {
+      // Detect words starting with hashtag and make them bold until whitespace
+      let word = "";
+      while (
+        i < txt.length &&
+        txt.charAt(i) !== " " &&
+        txt.charAt(i) !== "\n"
+      ) {
+        word += txt.charAt(i);
+        i++;
+      }
+      document.getElementById("typewriter").innerHTML += "<b>" + word + "</b>";
+      i--; // Move the index back to handle the whitespace or newline character in the next iteration
+    } else {
+      document.getElementById("typewriter").innerHTML += char;
+    }
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
