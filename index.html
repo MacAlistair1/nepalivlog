@@ -33,9 +33,11 @@
       Nepali Vlog | Explore, Experience, Embrace : Unveils the heart of Nepal
     </title>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4169711514328840"
-     crossorigin="anonymous"></script>
-
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4169711514328840"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -120,8 +122,32 @@
             data-layout="full"
             data-count="default"
           ></div>
+
+          <br><br>
+
+          <div id="donate-button-container">
+            <div id="donate-button"></div>
+            <script
+              src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+              charset="UTF-8"
+            ></script>
+            <script>
+              PayPal.Donation.Button({
+                env: "production",
+                hosted_button_id: "5UT9V6CUFANPA",
+                image: {
+                  src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif",
+                  alt: "Donate with PayPal button",
+                  title: "PayPal - The safer, easier way to pay online!",
+                },
+              }).render("#donate-button");
+            </script>
+          </div>
+
         </div>
       </section>
+
+      
 
       <!-- <section class="panch-pokhari-video" id="panch-pokhari-video">
         <br />
