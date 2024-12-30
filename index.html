@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 16px">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/preloader.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <meta charset="utf-8" />
 
     <!-- favicon -->
     <link
@@ -33,6 +29,50 @@
       Nepali Vlog | Explore, Experience, Embrace : Unveils the heart of Nepal
     </title>
 
+    <link rel="stylesheet" href="styles.css" media="screen" />
+    <link rel="stylesheet" href="others.css" media="screen" />
+    <link rel="stylesheet" href="preloader.css" media="screen" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery-1.9.1.min.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="page.js"
+      defer=""
+    ></script>
+
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="preloader.js"
+      defer=""
+    ></script>
+
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="custom.js"
+      defer=""
+    ></script>
+
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bangers:400"
+    />
+
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4169711514328840"
@@ -40,9 +80,7 @@
     ></script>
   </head>
 
-  <body>
-    <canvas id="canvas" width="3360" height="1046"></canvas>
-
+  <body class="u-body">
     <div class="preloader">
       <svg
         width="576.7210083007812"
@@ -69,435 +107,847 @@
       </svg>
     </div>
 
-    <div class="parallax-container" id="home">
-      <div class="left-frame" onclick="leftFrameClick()"></div>
-      <div class="right-frame" onclick="rightFrameClick()"></div>
+    <!-- cover section -->
+    <section class="u-clearfix u-image u-section-1" id="sec-9249">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="./assets/shot/2H.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="u-clearfix u-sheet u-sheet-1 scale">
+        <img
+          src="./assets/v1/logo.png"
+          alt=""
+          class="u-image u-image-default u-image-1"
+          data-image-width="273"
+          data-image-height="256"
+        />
+        <div class="scroll-icon" onclick="scrollToSection('gallery')"></div>
+        <div class="scroll-text" onclick="scrollToSection('gallery')">
+          Scroll
+        </div>
+        <div
+          class="u-align-left u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-group-1"
+        >
+          <div class="u-container-layout u-container-layout-1">
+            <h1
+              class="u-custom-font u-text u-text-body-alt-color u-title u-text-1"
+            >
+              <quote>Explore, Experience, Embrace</quote>
+            </h1>
+            <div
+              class="u-social-icons u-spacing-10 u-text-body-alt-color u-social-icons-1"
+            >
+              <a
+                class="u-social-url"
+                target="_blank"
+                href="https://youtube.com/@nepalivlog"
+                ><span
+                  class="u-icon u-icon-circle u-social-youtube u-social-type-logo u-icon-1"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M 12 4 C 12 4 5.7455469 3.9999687 4.1855469 4.4179688 C 3.3245469 4.6479688 2.6479687 5.3255469 2.4179688 6.1855469 C 1.9999687 7.7455469 2 12 2 12 C 2 12 1.9999687 16.254453 2.4179688 17.814453 C 2.6479687 18.675453 3.3255469 19.352031 4.1855469 19.582031 C 5.7455469 20.000031 12 20 12 20 C 12 20 18.254453 20.000031 19.814453 19.582031 C 20.674453 19.352031 21.352031 18.674453 21.582031 17.814453 C 22.000031 16.254453 22 12 22 12 C 22 12 22.000031 7.7455469 21.582031 6.1855469 C 21.352031 5.3255469 20.674453 4.6479688 19.814453 4.4179688 C 18.254453 3.9999687 12 4 12 4 z M 12 6 C 14.882 6 18.490875 6.1336094 19.296875 6.3496094 C 19.465875 6.3946094 19.604391 6.533125 19.650391 6.703125 C 19.891391 7.601125 20 10.342 20 12 C 20 13.658 19.891391 16.397875 19.650391 17.296875 C 19.605391 17.465875 19.466875 17.604391 19.296875 17.650391 C 18.491875 17.866391 14.882 18 12 18 C 9.119 18 5.510125 17.866391 4.703125 17.650391 C 4.534125 17.605391 4.3956094 17.466875 4.3496094 17.296875 C 4.1086094 16.398875 4 13.658 4 12 C 4 10.342 4.1086094 7.6011719 4.3496094 6.7011719 C 4.3946094 6.5331719 4.533125 6.3946094 4.703125 6.3496094 C 5.508125 6.1336094 9.118 6 12 6 z M 10 8.5351562 L 10 15.464844 L 16 12 L 10 8.5351562 z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
 
-      <video autoplay loop muted poster="assets/images/waterfall.jpg">
-        <source src="assets/shot/waterfall.mp4" type="video/mp4" />
-      </video>
+              <a
+                class="u-social-url"
+                target="_blank"
+                href="https://facebook.com/macalistairvlogs"
+                ><span
+                  class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-1"
+                  ><svg
+                    class="u-svg-link"
+                    preserveAspectRatio="xMidYMin slice"
+                    viewBox="0 0 112.2 112.2"
+                  >
+                    <use xlink:href="#svg-c899"></use></svg
+                  ><svg
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 112.2 112.2"
+                    enable-background="new 0 0 112.2 112.2"
+                    xml:space="preserve"
+                    id="svg-c899"
+                    class="u-svg-content"
+                  >
+                    <path
+                      d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"
+                    ></path></svg
+                ></span>
+              </a>
+              <a
+                class="u-social-url"
+                target="_blank"
+                href="https://x.com/_nepalivlog"
+                ><span
+                  class="u-icon u-icon-circle u-social-twitter u-social-type-logo u-icon-2"
+                  ><svg
+                    class="u-svg-link"
+                    preserveAspectRatio="xMidYMin slice"
+                    viewBox="0 0 112.2 112.2"
+                  >
+                    <use xlink:href="#svg-b6ca"></use></svg
+                  ><svg
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 112.2 112.2"
+                    enable-background="new 0 0 112.2 112.2"
+                    xml:space="preserve"
+                    id="svg-b6ca"
+                    class="u-svg-content"
+                  >
+                    <path
+                      d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"
+                    ></path></svg
+                ></span>
+              </a>
+              <a
+                class="u-social-url"
+                target="_blank"
+                href="https://instagram.com/_nepalivlog"
+                ><span
+                  class="u-icon u-icon-circle u-social-instagram u-social-type-logo u-icon-3"
+                  ><svg
+                    class="u-svg-link"
+                    preserveAspectRatio="xMidYMin slice"
+                    viewBox="0 0 112.2 112.2"
+                  >
+                    <use xlink:href="#svg-3205"></use></svg
+                  ><svg
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 112.2 112.2"
+                    enable-background="new 0 0 112.2 112.2"
+                    xml:space="preserve"
+                    id="svg-3205"
+                    class="u-svg-content"
+                  >
+                    <path
+                      d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"
+                    ></path>
+                    <path
+                      d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"
+                    ></path>
+                    <path
+                      d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"
+                    ></path></svg
+                ></span>
+              </a>
+            </div>
 
-      <div class="scroll-icon" onclick="scrollToSection('profile')"></div>
-      <div class="scroll-text" onclick="scrollToSection('profile')">Scroll</div>
-    </div>
+            <a
+              href="https://youtube.com/@nepalivlog/videos"
+              class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
+              style="display: inline-flex"
+            >
+              <svg
+                width="25px"
+                height="25px"
+                viewBox="0 -7 48 48"
+              >
+                <g
+                  id="Icons"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Color-"
+                    transform="translate(-200.000000, -368.000000)"
+                    fill="rgb(255 255 255)"
+                  >
+                    <path
+                      d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z"
+                      id="Youtube"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
 
-    <nav class="fixed-menu">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#channel">Channel</a></li>
-        <li><a href="#profile">Social</a></li>
-      </ul>
-      <a href="#home" class="logo">
-        <img id="logo-img" alt="Logo" />
-      </a>
-      <ul>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#map">Map</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <section class="channel-stats" id="channel">
-        <h2>Channel Stats</h2>
-        <div class="stats-container">
-          <div class="stat count">
-            <h3>Views</h3>
-            <p id="viewCount">Loading...</p>
-          </div>
-          <div class="stat count">
-            <h3>Subscribers</h3>
-            <p id="subscriberCount">Loading...</p>
-          </div>
-          <div class="stat count">
-            <h3>Videos</h3>
-            <p id="videoCount">Loading...</p>
+              &nbsp; Watch Now
+            </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="subscribe-container">
+    <!-- channel stat section -->
+    <section
+      class="u-black u-clearfix u-image u-shading u-section-5"
+      src="#"
+      id="sec-a80a"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1 fade" id="channel">
+        <div
+          class="u-align-left u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xs u-group u-group-1"
+        >
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h2 class="u-custom-font u-text u-text-1">Channel Stats</h2>
+            <p class="u-text u-text-2">
+              Explore our growing journey with a thriving community of viewers! Check out our total views, subscriber count, 
+              and the number of videos we've shared so far. Thank you for being part of our story!
+            </p>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div
+                class="u-align-center-md u-container-style u-layout-cell u-left-cell u-size-20 u-size-30-md u-layout-cell-1"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-2"
+                >
+                  <h3
+                    class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-custom-font u-text u-title u-text-5"
+                    data-animation-name="counter"
+                    data-animation-event="scroll"
+                    data-animation-duration="3000"
+                    id="viewCount"
+                  >
+                    Loading...
+                  </h3>
+                  <p
+                    class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-text u-text-4"
+                  >
+                    Views
+                  </p>
+                </div>
+              </div>
+              <div
+                class="u-container-style u-layout-cell u-size-20 u-size-30-md u-layout-cell-2"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-3"
+                >
+                  <h3
+                    class="u-align-center u-custom-font u-text u-title u-text-5"
+                    data-animation-name="counter"
+                    data-animation-event="scroll"
+                    data-animation-duration="3000"
+                    id="subscriberCount"
+                  >
+                    Loading...
+                  </h3>
+                  <p class="u-align-center u-text u-text-6">Subscribers</p>
+                </div>
+              </div>
+              <div
+                class="u-container-style u-layout-cell u-size-20 u-size-30-md u-layout-cell-3"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-4"
+                >
+                  <h3
+                    class="u-align-center u-custom-font u-text u-title u-text-5"
+                    data-animation-name="counter"
+                    data-animation-event="scroll"
+                    data-animation-duration="3000"
+                    id="videoCount"
+                  >
+                    Loading...
+                  </h3>
+                  <p class="u-align-center u-text u-text-8">Videos</p>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- top from our channel -->
+    <section class=" u-clearfix u-section-4" id="sec-e768">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-group u-group-1">
+          <div class="u-container-layout">
+            <h2 class="u-custom-font u-text u-text-1">
+              Top Content From Our Journey
+            </h2>
+            <p class="u-text u-text-2">
+              Our channel has been a vibrant tapestry of adventures, and we're thrilled to share our top-performing videos with you! Among these, 
+              two videos stand out as the most popular, captivating audiences with their unique storytelling and stunning visuals. 
+              But that's not all—our journey is filled with numerous unforgettable moments, and we've curated more top videos that highlight the essence of exploration, culture, and nature. 
+              
+            </p>
+          </div>
+        </div>
+        <div
+          class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div
+                class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2"
+              >
+                <div class="u-container-layout updown">
+                  <iframe src="https://www.youtube.com/embed/JqAFGSMcq5w?controls=0" class="u-expanded-width u-image u-image-2"  aria-controls="false"></iframe>
+                  <p class="u-text u-text-4">
+                   Kathmandu is the capital city of Nepal, where you can find various dating spots. 
+                   The city offers you lots of romantic dating spots, where you can take your loved one for a romantic date. 
+                   Here are the top 5 dating spots near Kathmandu. Enjoy watching the video. Don't forget to comment your thoughts.
+                  </p>
+                  <a
+                    href="https://www.youtube.com/embed/JqAFGSMcq5w"
+                    class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-2"
+                    >watch now</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-30 u-layout-cell-1"
+              >
+                <div class="u-container-layout updown">
+
+                  <iframe src="https://www.youtube.com/embed/ml-Ti89QeC8?controls=0" class="u-expanded-width u-image u-image-1"  aria-controls="false"></iframe>
+
+                  <p class="u-text u-text-3">
+                    The Kedarnath Temple is a Hindu temple dedicated to Lord Shiva. It is on the Garhwal Himalayan range near the Mandakini river in Kedarnath, Uttarakhand in India. 
+                    During the winters, the vigrahas (deities) from Kedarnath temple are brought to Ukhimath and worshiped there for six months.
+                  </p>
+                  <a
+                    href="https://www.youtube.com/embed/ml-Ti89QeC8"
+                    class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
+                    >watch now</a
+                  >
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- what you can see -->
+    <section class="u-black u-clearfix u-image u-shading u-section-6" id="sec-8ad9">
+      <div class="u-clearfix u-sheet u-sheet-1 fade">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div
+                class="u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-1"
+                >
+                  <h2 class="u-custom-font u-text u-text-1">
+                    What You Can See
+                  </h2>
+                  <p class="u-text u-text-2">
+                    On our channel, you'll find a mix of breathtaking destinations, vibrant cultures, and unique experiences. 
+                    From serene mountain hikes and hidden caves to bustling towns and iconic landmarks, every vlog showcases the beauty and diversity of the world around us.
+                  </p>
+                  <!-- <a
+                    href="#"
+                    class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
+                    >read more</a
+                  > -->
+                </div>
+              </div>
+              <div
+                class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2"
+              >
+                <div class="u-container-layout u-valign-middle">
+                  <ul class="u-text u-text-3">
+
+                    <li>Majestic Himalayan trails</li>
+                    <li>Sacred temples and cultural landmarks</li>
+                    <li>Traditional cuisines and local lifestyles</li>
+                    <li>Hidden gems and offbeat adventures</li>
+                    <li>Stunning drone footage of scenic landscapes</li>
+                    <li>Festivals, rituals, and authentic travel experiences</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- about section -->
+      <section class="u-clearfix u-section-2" id="sec-3396">
+        <div class="u-clearfix u-sheet u-sheet-1">
           <div
-            class="g-ytsubscribe"
-            data-channelid="UCWaW8kOPn906WIcDj5CpwDQ"
-            data-layout="full"
-            data-count="default"
-          ></div>
-
-          <br><br>
-
-          <div id="donate-button-container">
-            <div id="donate-button"></div>
-            <script
-              src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
-              charset="UTF-8"
-            ></script>
-            <script>
-              PayPal.Donation.Button({
-                env: "production",
-                hosted_button_id: "5UT9V6CUFANPA",
-                image: {
-                  src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif",
-                  alt: "Donate with PayPal button",
-                  title: "PayPal - The safer, easier way to pay online!",
-                },
-              }).render("#donate-button");
-            </script>
-          </div>
-
-        </div>
-      </section>
-
-      
-
-      <!-- <section class="panch-pokhari-video" id="panch-pokhari-video">
-        <br />
-        <h2>Panch Pokhari Hike: Exploring the Holy Lakes</h2>
-        <div id="panch-pokhari-videos-container"></div>
-        <br>
-      </section> -->
-
-      <section class="latest-video" id="latest-video">
-        <br />
-        <h2>The Kerala Series: A Journey Through God's Own Country</h2>
-        <div id="latest-videos-container"></div>
-      </section>
-
-      <section class="popular-video" id="popular-video">
-        <h2>Most Popular Videos</h2>
-        <div id="videos-container"></div>
-      </section>
-
-      <section class="social-profiles" id="profile">
-        <h2>Social Links</h2>
-        <div class="profile-links">
-          <a
-            class="icon fade"
-            href="https://www.facebook.com/macalistairvlogs"
-            target="_blank"
+            class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1"
           >
-            <img src="assets/icon/fb.svg" alt="Facebook" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.instagram.com/macalistairvlogs"
-            target="_blank"
-          >
-            <img src="assets/icon/insta.svg" alt="Instagram" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.twitter.com/_nepalivlog"
-            target="_blank"
-          >
-            <img src="assets/icon/twitter.svg" alt="Twitter X" />
-          </a>
-          <a
-            class="icon"
-            href="https://www.tiktok.com/@_nepalivlog"
-            target="_blank"
-          >
-            <img src="assets/icon/tiktok.svg" alt="Tiktok" />
-          </a>
-        </div>
-
-        <div class="qr-code-container">
-          <div class="qr-code-placeholder">
-            <img src="assets/icon/qr.png" alt="QR Code" />
-          </div>
-          <p class="scan-me-text">Scan Me</p>
-        </div>
-      </section>
-
-      <section
-        class="social-profiles"
-        id="other-channels"
-        style="background-color: #ffffff"
-      >
-        <h2>Our Other Channels</h2>
-        <div class="profile-links" style="margin-top: 30px !important">
-          <a
-            class="icon fade"
-            href="https://youtube.com/@freedroneshot"
-            target="_blank"
-          >
-            <img src="assets/icon/drone.png" alt="Free Drone Shots Nepal" />
-          </a>
-          <a
-            class="icon"
-            href="https://youtube.com/@pahiloframes"
-            target="_blank"
-          >
-            <img src="assets/icon/pahilo.png" alt="Pahilo Frames Production" />
-          </a>
-          <a
-            class="icon"
-            href="https://youtube.com/@nepali.shorts"
-            target="_blank"
-          >
-            <img src="assets/icon/nepali-shorts.png" alt="Nepali Shorts" />
-          </a>
-        </div>
-      </section>
-
-      <section class="photo-gallery" id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/seen-from-mardi.jpg"
-              alt="2 Mountains Seen from Mardi"
-            />
-            <div class="image-description">
-              Annapurna South &amp; Hiuchuli Himal Seen From Mardi Base Camp
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/dupcheshwor.jpg"
-              alt="Dupcheshwor Mahadev"
-            />
-            <div class="image-description">
-              Famous Dupcheshwor Mahadev, Nuwakot
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/sanga.jpg" alt="Sanga Mahadevsthan" />
-            <div class="image-description">
-              143 ft. Tall Shiv Statue, Sanga Mahadevsthan
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/1-min.png" alt="Sunrise from Nala Gadhi" />
-            <div class="image-description">
-              Beautiful Sunrise from Nala Gadhi, Banepa-1,Kavre
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="assets/gallery/3-min.png" alt="Kalinchowk Kuri Village" />
-            <div class="image-description">Over the clouds, Kalinchowk</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/4.jpg" alt=">Basuki, Ugrachandi, Banepa" />
-            <div class="image-description">Basuki, Ugrachandi, Banepa</div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/5.jpg" alt="Tindhare Waterfall" />
-            <div class="image-description">
-              Tindhare Waterfall is a waterfall located in Roshi Rural
-              Municipality of Kavrepalanchok District in Nepal. It has a height
-              of about 300 metres. The name of this waterfall is 'Tindhare' as
-              it falls from the hill of Mahabharat Range in the form of three
-              streams.
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/6-min.png" alt="Mt. Annapurna" />
-            <div class="image-description">Mt. Annapurna from Poon Hill</div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/7-min.png"
-              alt="Chandrashila, Utarakhand"
-            />
-            <div class="image-description">
-              Beautiful scene At level 3690m, Chandrashila, Utarakhand
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/8-min.png"
-              alt="Swayambhunath, Kathmandu"
-            />
-            <div class="image-description">
-              Perched on top of Semgu Hill, located on the outskirts of the
-              Kathmandu Valley, the Swayambhu Temple is one of the most
-              important religious shrines in Nepal.
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/gallery/9-min.png" alt="Phewa Lake, Pokhara" />
-            <div class="image-description">
-              Phewa Lake/Fewa Lake is a freshwater lake in Nepal formerly called
-              Baidam Tal located in the south of the Pokhara Valley that
-              includes Pokhara city and parts of Sarangkot and Kaskikot.
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="assets/gallery/2-min.png"
-              alt="Sunset from Narayanthan, Bethanchowk, Kavre"
-            />
-            <div class="image-description">
-              Cinematic Sunset from Bethanchok Narayansthan, Kavre
-            </div>
-          </div>
-        </div>
-
-        <div class="image-popup">
-          <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <img class="popup-img" src="" alt="Popup Image" />
-            <div class="image-description-overlay">
-              <p id="popupDescription"></p>
-            </div>
-            <div class="navigation">
-              <span class="prev-btn">&#10094;</span>
-              <span class="next-btn">&#10095;</span>
+            <div class="u-layout" id="about">
+              <div class="u-layout-row scale">
+  
+                <div
+                class="u-align-left u-container-style u-layout-cell u-left-cell u-size-35 u-size-20-md u-layout-cell-1"
+              >
+                <div
+                  class="u-container-layout u-valign-middle u-container-layout-1"
+                >
+                  <h3 class="u-custom-font u-text u-text-1">About Us</h3>
+                  <p class="u-text u-text-2" id="typewriter">
+                    Welcome to Nepali Vlog, and We're thrilled to share our
+                    adventures with you.
+                  </p>
+                </div>
+                </div>
+  
+                <div
+                  class="u-align-left u-container-style u-image u-layout-cell u-size-25 u-size-40-md u-image-1"
+                >
+                  <div class="u-container-layout" src="#"></div>
+                </div>
+               
+              </div>
+              
+              </div>
             </div>
           </div>
         </div>
       </section>
+  
 
-      <section class="about" id="about">
-        <h2>About Us</h2>
+    <!-- gallery section -->
+    <section class="u-black u-clearfix u-section-3" id="sec-39ba">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout" id="gallery">
+            <div class="u-layout-row">
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  <div
+                    class="u-container-style u-image u-layout-cell u-left-cell u-shading u-size-30 u-image-1 scale"
+                  >
+                    <div class="u-container-layout u-container-layout-1">
+                      <h3 class="u-custom-font u-text u-text-1">
+                        From mountains,
+                      </h3>
+                      <p class="u-text u-text-2">
+                        Mardi Base Camp offers an awe-inspiring vantage point to witness the majestic Annapurna South and Hiunchuli Himal up close. 
+                        These towering peaks, draped in glistening snow, create a mesmerizing panorama against the clear Himalayan skies.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-2"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="about-content">
-          <div class="about-left">
-            <div id="typewriter">
-              Welcome to <b>Nepali Vlog</b>, and We're thrilled to share our
-              adventures with you. <br />
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-3"
+                  >
+
+                    <div class="u-container-layout"></div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-4"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-5"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="u-size-20 u-size-60-md">
+                <div class="u-layout-col">
+                  <div
+                    class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-6"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+
+                  <div
+                    class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-7 scale"
+                  >
+                    <div class="u-container-layout u-valign-bottom">
+                      <h3 class="u-custom-font u-text u-text-3">Beautiful Glacier Lakes,</h3>
+                      <p class="u-text u-text-4">
+                        Nestled in the serene Solu region of Dolakha, Dudh Kunda is a breathtaking glacial lake perched at an altitude of 4,780 meters. 
+                        Surrounded by majestic snow-capped peaks, the lake holds significant spiritual and natural allure, drawing pilgrims and trekkers alike.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="about-right">
-            <img id="sticker-img" alt="Sticker" class="sticker" />
+
+            <div class="u-layout-row">
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  <div
+                    class="u-container-style u-image u-layout-cell u-left-cell u-shading u-size-30 u-image-8 scale"
+                  >
+                    <div class="u-container-layout u-container-layout-1">
+                      <h3 class="u-custom-font u-text u-text-1">
+                        Sacred Temples,
+                      </h3>
+                      <p class="u-text u-text-2">
+                        Kedarnath, located in the Indian state of Uttarakhand, is one of the holiest pilgrimage sites in India, dedicated to Lord Shiva. 
+                        Situated at an altitude of 3,583 meters in the Garhwal Himalayas, it is part of the Char Dham Yatra.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-left-cell u-size-30 u-image-9"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="u-size-20 u-size-30-md">
+                <div class="u-layout-col">
+                  
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-10"
+                  >
+
+                    <div class="u-container-layout"></div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-11"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                  <div
+                    class="u-container-style u-image u-layout-cell u-size-20 u-image-12"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="u-size-20 u-size-60-md">
+                <div class="u-layout-col">
+                  <div
+                    class="u-container-style u-image u-layout-cell u-right-cell u-size-30 u-image-13"
+                  >
+                    <div class="u-container-layout"></div>
+                  </div>
+
+                  <div
+                    class="u-container-style u-image u-layout-cell u-right-cell u-shading u-size-30 u-image-14 scale"
+                  >
+                    <div class="u-container-layout u-valign-bottom">
+                      <h3 class="u-custom-font u-text u-text-3">and Many More..</h3>
+                      <p class="u-text u-text-4">
+                        Bethanchowk, located at an altitude of 3,018 meters in the Kavrepalanchok district of Nepal, is a popular viewpoint that offers stunning views of the surrounding Himalayan ranges. 
+                        One of the most breathtaking experiences here is witnessing the <mark>"cloud beds"</mark>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- testimonials section -->
+    <section class="u-clearfix u-section-7" id="sec-8ecc">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gutter-20 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-30 updown">
+                <div class="u-layout-row">
+                  <div
+                    class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1"
+                  >
+                    <div class="u-container-layout">
+                      <div
+                        alt=""
+                        class="u-align-left u-image u-image-circle u-image-1"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="u-align-left u-container-style u-layout-cell u-right-cell u-size-40 u-layout-cell-2"
+                  >
+                    <div class="u-container-layout u-container-layout-2">
+                      <p class="u-text u-text-1">
+                        "I've been following Nepali Vlog's content for a while now, and I can confidently say that their channel is one of the best 
+                        for authentic Nepali travel experiences. From breathtaking drone shots to engaging vlogs, every video is a visual treat. 
+                        It's clear that a lot of hard work and passion goes into their creations. Can't wait to see more!"
+                      </p>
+                      <h5 class="u-custom-font u-text u-text-2">
+                        — Priya Tamang, Adventure Lover
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30 scale">
+                <div class="u-layout-row">
+                  <div
+                    class="u-align-left u-container-style u-layout-cell u-left-cell u-size-40 u-layout-cell-3"
+                  >
+                    <div class="u-container-layout u-container-layout-3">
+                      <p class="u-text u-text-3">
+                        "Working with Nepali Vlog has been an incredible experience! Their travel vlogs are not only visually stunning but also packed 
+                        with interesting facts and cultural insights. I felt like I was right there, exploring the places with them. 
+                        Their attention to detail and the personal touch they add to each video is what makes their content stand out. 
+                        Highly recommend checking out their work!"
+                      </p>
+                      <h5 class="u-custom-font u-text u-text-4">
+                        — Rajesh Sharma, Travel Enthusiast
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-layout-cell-4"
+                  >
+                    <div class="u-container-layout">
+                      <div
+                        alt=""
+                        class="u-align-left u-image u-image-circle u-image-2"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- other best content to explore -->
+     <section class="u-black u-clearfix u-section-4" id="sec-e768">
+      <div class="u-clearfix u-sheet u-sheet-1 updown">
+        <div class="u-container-style u-group u-group-1">
+          <div class="u-container-layout">
+            <h2 class="u-custom-font u-text u-text-1">
+              Other Videos that you might Like
+            </h2>
+            <p class="u-text u-text-2">
+              Check out these videos that you might enjoy! From stunning travel vlogs to captivating documentaries, we've curated a collection of content that showcases beautiful landscapes, 
+              cultural insights, and exciting adventures.
+            </p>
+          </div>
+        </div>
+        <div
+          class="u-clearfix u-expanded-width u-gutter-20 u-layout-wrap u-layout-wrap-1"
+        >
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div
+                class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2"
+              >
+                <div class="u-container-layout">
+
+                  <iframe src="https://www.youtube.com/embed/RzdpYf0ByA0?controls=0" class="u-expanded-width u-image u-image-2"  aria-controls="false"></iframe>
+                  <p class="u-text u-text-4">
+                    Just 45km from Kathmandu, our adventure began with a thrilling bike ride to Mahadev Tar, followed by a 2.5-hour hike to the temple. 
+                    The ethereal beauty of the fog-covered hills, combined with the spiritual aura of Latarambeshwor Mahadev, made this trek truly mesmerizing.</p>
+                  <a
+                    href="https://www.youtube.com/embed/RzdpYf0ByA0"
+                    class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-2"
+                    >watch now</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="u-container-style u-expand-resize u-layout-cell u-left-cell u-size-30 u-layout-cell-1"
+              >
+                <div class="u-container-layout">
+
+                  <iframe src="https://www.youtube.com/embed/tNt-tt6eRYw?controls=0" class="u-expanded-width u-image u-image-1"  aria-controls="false"></iframe>
+
+                  <p class="u-text u-text-3">
+                    Explore the houseboat with us as we tour the kitchen, bedroom, rooftop, and all the available facilities. From delicious meals to breathtaking scenery, 
+                    this episode is packed with moments that will captivate and delight you. Our aerial footage will give you a unique perspective on the enchanting backwaters of Kerala, making this a must-watch for nature lovers and adventure seekers alike.  
+                  </p>
+                  <a
+                    href="https://www.youtube.com/embed/tNt-tt6eRYw"
+                    class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
+                    >watch now</a
+                  >
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our other channels -->
+    <section
+      class="u-clearfix u-image u-shading u-section-5 updown"
+      src="#"
+      id="sec-a80a"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div
+          class="u-align-left u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xs u-group u-group-1"
+        >
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h2 class="u-custom-font u-text u-text-1">Our Other Channels</h2>
+            <p class="u-text u-text-2">
+              Explore our other channels for more exciting content! Check out FreeDroneShots for breathtaking drone shot videos, 
+              showcasing stunning aerial views. If you're looking for professional event captures, 
+              PahiloFramesProductions offers high-quality footage of special moments and celebrations. 
+              And for quick, entertaining videos, visit Nepali Shorts for engaging YouTube Shorts. Each channel brings something unique, 
+              so don't forget to subscribe and enjoy the diverse content we offer!
+            </p>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="profile-links scale">
+              <a
+                class="icon"
+                href="https://youtube.com/@freedroneshot"
+                target="_blank"
+              >
+                <img src="assets/icon/drone.png" alt="Free Drone Shots Nepal" />
+              </a>
+              <a
+                class="icon"
+                href="https://youtube.com/@pahiloframes"
+                target="_blank"
+              >
+                <img src="assets/icon/pahilo.png" alt="Pahilo Frames Production" />
+              </a>
+              <a
+                class="icon"
+                href="https://youtube.com/@nepali.shorts"
+                target="_blank"
+              >
+                <img src="assets/icon/nepali-shorts.png" alt="Nepali Shorts" />
+              </a>
+
+              <a
+              class="icon"
+              href="https://youtube.com/@Jee.ven.L"
+              target="_blank"
+            >
+              <img src="assets/icon/jeeven.png" alt="Jeeven Lamichhane" />
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer section  -->
+    <section class="u-black u-clearfix u-section-8" id="sec-633a">
       <section class="maps" id="map">
-        <h2>place we've covered</h2>
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1eTpxH6pfNpnK5lZ2_TguAG4MJTvzzTA&ehbc=2E312F&noprof=1"
-          width="640"
-          height="480"
         ></iframe>
       </section>
-    </main>
 
-    <footer class="footer footer-hidden">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Us</h3>
-          <p>
-            Embrace the journey: Exploring cultures and creating memories with
-            <b>Nepali Vlog</b>
-          </p>
-        </div>
-
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#channel">Channel</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <p>
-            Email:
-            <a href="mailto:info@nepalivlog.com" class="link"
-              >info@nepalivlog.com</a
-            >
-          </p>
-          <p>
-            Phone: <a href="tel:+9779860463471" class="link">+977 9860463471</a>
-          </p>
-        </div>
+      <div class="lines">
+        <div class="bg-primary" style="margin-top: 0px; height: 23px"></div>
+        <div class="bg-primary" style="margin-top: 1px; height: 22px"></div>
+        <div class="bg-primary" style="margin-top: 2px; height: 21px"></div>
+        <div class="bg-primary" style="margin-top: 3px; height: 20px"></div>
+        <div class="bg-primary" style="margin-top: 4px; height: 19px"></div>
+        <div class="bg-primary" style="margin-top: 5px; height: 18px"></div>
+        <div class="bg-primary" style="margin-top: 6px; height: 17px"></div>
+        <div class="bg-primary" style="margin-top: 7px; height: 16px"></div>
+        <div class="bg-primary" style="margin-top: 8px; height: 15px"></div>
+        <div class="bg-primary" style="margin-top: 9px; height: 14px"></div>
+        <div class="bg-primary" style="margin-top: 10px; height: 13px"></div>
+        <div class="bg-primary" style="margin-top: 11px; height: 12px"></div>
+        <div class="bg-primary" style="margin-top: 12px; height: 11px"></div>
+        <div class="bg-primary" style="margin-top: 13px; height: 10px"></div>
+        <div class="bg-primary" style="margin-top: 14px; height: 9px"></div>
+        <div class="bg-primary" style="margin-top: 15px; height: 8px"></div>
+        <div class="bg-primary" style="margin-top: 16px; height: 7px"></div>
+        <div class="bg-primary" style="margin-top: 17px; height: 6px"></div>
+        <div class="bg-primary" style="margin-top: 18px; height: 5px"></div>
+        <div class="bg-primary" style="margin-top: 19px; height: 4px"></div>
+        <div class="bg-primary" style="margin-top: 20px; height: 3px"></div>
+        <div class="bg-primary" style="margin-top: 21px; height: 2px"></div>
+        <div class="bg-primary" style="margin-top: 22px; height: 1px"></div>
+        <div class="bg-primary" style="margin-top: 23px; height: 0px"></div>
       </div>
 
-      <div class="footer-bottom">
-        <p>
-          &copy; <span id="year">2023</span>
-          <a href="/" class="link"><b>Nepali Vlog</b></a> | All rights reserved.
-        </p>
-      </div>
-    </footer>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              Embrace the journey: Exploring cultures and creating memories with
+              <br />
+              <b>Nepali Vlog</b>
+            </p>
+          </div>
 
-    <div style="margin-top: -23px" class="lines">
-      <!--[-->
-      <div class="bg-primary" style="margin-top: 0px; height: 23px"></div>
-      <div class="bg-primary" style="margin-top: 1px; height: 22px"></div>
-      <div class="bg-primary" style="margin-top: 2px; height: 21px"></div>
-      <div class="bg-primary" style="margin-top: 3px; height: 20px"></div>
-      <div class="bg-primary" style="margin-top: 4px; height: 19px"></div>
-      <div class="bg-primary" style="margin-top: 5px; height: 18px"></div>
-      <div class="bg-primary" style="margin-top: 6px; height: 17px"></div>
-      <div class="bg-primary" style="margin-top: 7px; height: 16px"></div>
-      <div class="bg-primary" style="margin-top: 8px; height: 15px"></div>
-      <div class="bg-primary" style="margin-top: 9px; height: 14px"></div>
-      <div class="bg-primary" style="margin-top: 10px; height: 13px"></div>
-      <div class="bg-primary" style="margin-top: 11px; height: 12px"></div>
-      <div class="bg-primary" style="margin-top: 12px; height: 11px"></div>
-      <div class="bg-primary" style="margin-top: 13px; height: 10px"></div>
-      <div class="bg-primary" style="margin-top: 14px; height: 9px"></div>
-      <div class="bg-primary" style="margin-top: 15px; height: 8px"></div>
-      <div class="bg-primary" style="margin-top: 16px; height: 7px"></div>
-      <div class="bg-primary" style="margin-top: 17px; height: 6px"></div>
-      <div class="bg-primary" style="margin-top: 18px; height: 5px"></div>
-      <div class="bg-primary" style="margin-top: 19px; height: 4px"></div>
-      <div class="bg-primary" style="margin-top: 20px; height: 3px"></div>
-      <div class="bg-primary" style="margin-top: 21px; height: 2px"></div>
-      <div class="bg-primary" style="margin-top: 22px; height: 1px"></div>
-      <div class="bg-primary" style="margin-top: 23px; height: 0px"></div>
-      <!--]-->
-    </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#channel">Channel</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
 
-    <script src="assets/js/preloader.js"></script>
+            <div class="subscribe-container">
+              <div
+                class="g-ytsubscribe"
+                data-channelid="UCWaW8kOPn906WIcDj5CpwDQ"
+                data-layout="full"
+                data-count="default"
+              ></div>
+            </div>
+          </div>
 
-    <script src="assets/js/header.js"></script>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>
+              Email:
+              <a href="mailto:info@nepalivlog.com" class="link"
+                >info@nepalivlog.com</a
+              >
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+9779860463471" class="link">+977 9860463471</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span>
+            <a href="/" class="link"><b>Nepali Vlog</b></a> | All rights
+            reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
 
     <script src="assets/js/youtube.js"></script>
 
-    <script src="assets/js/maps.js"></script>
-
-    <script src="assets/js/footer.js"></script>
-
-    <script src="assets/js/count-up.js"></script>
-
-    <script src="assets/js/script.js"></script>
-
-    <!-- third party scripts -->
     <script src="https://apis.google.com/js/platform.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- third party scripts -->
-
-    <script src="assets/js/photo-slider.js"></script>
-
-    <script>
-      const logo = document.getElementById("logo-img");
-      const sticker = document.getElementById("sticker-img");
-      var head = document.getElementsByTagName("head")[0];
-
-      const date = new Date();
-      if (date.getMonth() == 6 && date.getDate() == 29) {
-        logo.src = "assets/icon/bday/logo.png";
-        sticker.src = "assets/icon/bday/sticker.png";
-
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "assets/js/bday-particle.js";
-        head.appendChild(script);
-      } else if (date.getMonth() == 9 && date.getDate() == 20) {
-        logo.src = "assets/icon/bday/logo.png";
-        sticker.src = "assets/icon/bday/sticker.png";
-
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "assets/js/bday-particle.js";
-        head.appendChild(script);
-      } else {
-        logo.src = "assets/icon/logo.png";
-        sticker.src = "assets/icon/sticker.png";
-      }
-    </script>
   </body>
 </html>

@@ -190,14 +190,14 @@ function displayVideos() {
 }
 
 // displayPanchPokhariVideos();
-displayLatestVideos();
-displayVideos();
+// displayLatestVideos();
+// displayVideos();
 
 // Load the YouTube API client
 //  gapi.load('client', fetchPopularVideos);
 
 let i = 0;
-let speed = 10;
+let speed = 5;
 
 function typeWriter() {
   if (i < txt.length) {
@@ -215,8 +215,14 @@ function typeWriter() {
         word += txt.charAt(i);
         i++;
       }
-      document.getElementById("typewriter").innerHTML += "<b>" + word + "</b>";
-      i--; // Move the index back to handle the whitespace or newline character in the next iteration
+      document.getElementById("typewriter").innerHTML += "&nbsp;<b>" + word + "</b>";
+      i--;
+    } else if (i == txt.length-1) {
+      document.getElementById("typewriter").innerHTML += `  <a
+      href="#"
+      class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
+      >read more</a
+    >`;
     } else {
       document.getElementById("typewriter").innerHTML += char;
     }

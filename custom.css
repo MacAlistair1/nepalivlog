@@ -1,0 +1,202 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+  bottom: 0;
+  margin-top: -70px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+.footer-section li:hover {
+  transform: scale(1.25);
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  margin-bottom: 0px !important;
+}
+
+.footer-bottom p {
+  margin-bottom: inherit;
+  padding: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-section a:hover {
+  color: #ffcc00;
+  transform: scale(1.25);
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background-image: url("./assets/icon/scroll.gif");
+  background-size: cover;
+  z-index: 1;
+  animation: scrollIconAnimation 1s infinite alternate;
+  cursor: pointer;
+}
+
+.scroll-text {
+  position: absolute;
+  bottom: 30px;
+  left: 51%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  animation: scrollIconAnimation 1s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes scrollIconAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* maps */
+
+.maps {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* maps */
+
+.lines {
+  background-color: white;
+}
+.bg-primary {
+  background-color: #000000 !important;
+}
+
+.fade {
+  animation: fade 5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+.updown {
+  animation: upDownAnimation 5s ease-in-out infinite;
+}
+
+@keyframes upDownAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.scale {
+  animation: scaleAnimation 3s ease-in-out infinite;
+}
+
+@keyframes scaleAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.profile-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.profile-links a {
+  margin: 0 10px;
+}
+
+.profile-links a:hover {
+  transform: scale(1.25);
+}
+
+.profile-links img {
+  width: 120px;
+  height: auto;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+iframe{
+  border: none !important; 
+}
