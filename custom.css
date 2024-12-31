@@ -197,6 +197,31 @@ a {
   object-fit: cover;
 }
 
-iframe{
-  border: none !important; 
+iframe {
+  border: none !important;
+}
+
+.u-social-url:hover {
+  transform: scale(1.25);
+}
+
+#viewCount:hover,
+#subscriberCount:hover,
+#videoCount:hover {
+  transform: scale(1.5);
+}
+
+.count-up {
+  animation: count-up 3s ease-in-out;
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
