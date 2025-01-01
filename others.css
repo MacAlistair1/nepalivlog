@@ -448,7 +448,7 @@
   background-image: none;
 }
 .u-section-4 .u-sheet-1 {
-  min-height: 700px;
+  min-height: 500px;
 }
 .u-section-4 .u-group-1 {
   width: 755px;
@@ -993,7 +993,7 @@
       rgba(0, 0, 0, 0.05)
     ),
     url("./assets/gallery/6-min.png");
-  background-position: 50% 50%;
+  background-position: 50% 54%;
 }
 .u-section-6 .u-sheet-1 {
   min-height: 479px;
