@@ -16,6 +16,7 @@ footerYear.innerHTML = new Date().getFullYear();
 
 let headerVideo = document.getElementById("header-video");
 let customVideo = document.getElementById("custom-video");
+let latestVideoATag = document.getElementById("latest-video");
 
 let videoId = "";
 
@@ -26,9 +27,11 @@ fetch("https://macalistair1.github.io/scrap-data/latest_yt_video.txt")
   .then((data) => {
     if (data) {
       let videoUrl = `https://www.youtube.com/embed/${data}?controls=0&autoplay=1`;
+      let videoWatchUrl = `https://www.youtube.com/watch?v=${data}`;
       setTimeout(() => {
         customVideo.style.display = "none";
       }, 2000);
       headerVideo.setAttribute("src", videoUrl);
+      latestVideoATag.setAttribute("href", videoWatchUrl);
     }
   });
