@@ -318,7 +318,7 @@
     url("./assets/gallery/6-min.png");
   min-height: 435px;
   background-position: 50% 50%;
-  border:2px white dashed !important;
+  border: 2px white dashed !important;
 }
 
 .u-section-3 .u-image-8 {
@@ -330,7 +330,7 @@
     url("./assets/gallery/kedarnath-min.jpg");
   min-height: 451px;
   background-position: 50% 50%;
-  border:2px white dashed !important;
+  border: 2px white dashed !important;
 }
 .u-section-3 .u-image-9 {
   background-image: url("./assets/gallery/8-min.png");
@@ -344,9 +344,9 @@
   background-position: 50% 50%;
 }
 .u-section-3 .u-image-11 {
-  background-image: url("./assets/gallery/2-min.png");
+  background-image: url("./assets/gallery/kamal.jpg");
   min-height: 282px;
-  background-position: 50% 50%;
+  background-position: 50% 72%;
 }
 .u-section-3 .u-image-12 {
   background-image: url("./assets/gallery/1-min.png");
@@ -367,7 +367,7 @@
     url("./assets/gallery/clouds.jpg");
   min-height: 435px;
   background-position: 50% 50%;
-  border:2px white dashed !important;
+  border: 2px white dashed !important;
 }
 
 .u-section-3 .u-text-3 {
