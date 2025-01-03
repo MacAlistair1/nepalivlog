@@ -60,142 +60,6 @@ function formatNumber(value) {
   }
 }
 
-// Replace 'YOUR_API_KEY' with your actual YouTube Data API key
-const apiKey = "YOUR_API_KEY";
-const maxResults = 3; // Number of videos to display
-const videosContainer = document.getElementById("videos-container");
-const latestVideosContainer = document.getElementById(
-  "latest-videos-container"
-);
-
-const panchPokhariVideosContainer = document.getElementById(
-  "panch-pokhari-videos-container"
-);
-
-function fetchPopularVideos() {
-  gapi.client
-    .init({
-      apiKey: apiKey,
-      discoveryDocs: [
-        "https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest",
-      ],
-    })
-    .then(() => {
-      return gapi.client.youtube.videos.list({
-        part: "snippet",
-        chart: "mostPopular",
-        regionCode: "US", // Change this to your desired region code
-        maxResults: maxResults,
-      });
-    })
-    .then(
-      (response) => {
-        displayVideos(response.result.items);
-      },
-      (error) => {
-        console.error("Error fetching YouTube API:", error);
-      }
-    );
-}
-
-function displayLatestVideos() {
-  latestVideosContainer.innerHTML = "";
-  videos = [
-    "1mlc6RT_JoU",
-    "GPPhZWameXc",
-    "QfFCrUQMTXg",
-    "PW_ABREqaHI",
-    "LbIIrsEdzbc",
-    "tNt-tt6eRYw",
-    "gQzVddTn-S8",
-    "eosUO2jq99Q",
-  ];
-
-  videos.forEach((video, index) => {
-    const videoDiv = document.createElement("div");
-    videoDiv.classList.add("latest-video-item");
-
-    const iframe = document.createElement("iframe");
-    if (index == 0) {
-      iframe.src = `https://www.youtube.com/embed/${video}?autoplay=1&`;
-    } else {
-      iframe.src = `https://www.youtube.com/embed/${video}`;
-    }
-    iframe.width = "450";
-    iframe.height = "315";
-    iframe.frameborder = "0";
-    iframe.allowFullscreen = true;
-
-    videoDiv.appendChild(iframe);
-    latestVideosContainer.appendChild(videoDiv);
-  });
-}
-
-function displayPanchPokhariVideos() {
-  panchPokhariVideosContainer.innerHTML = "";
-
-  videos = ["LbIIrsEdzbc", "PW_ABREqaHI"]; // Replace with your actual video IDs
-
-  videos.forEach((video, index) => {
-    const videoDiv = document.createElement("div");
-    videoDiv.classList.add("panch-pokhari-video-item"); // Add a custom class for the Panch Pokhari Hike videos
-
-    const iframe = document.createElement("iframe");
-    if (index == 0) {
-      iframe.src = `https://www.youtube.com/embed/${video}?autoplay=1&`;
-    } else {
-      iframe.src = `https://www.youtube.com/embed/${video}`;
-    }
-    iframe.width = "500";
-    iframe.height = "315";
-    iframe.frameborder = "0";
-    iframe.allowFullscreen = true;
-
-    videoDiv.appendChild(iframe);
-    panchPokhariVideosContainer.appendChild(videoDiv);
-  });
-}
-
-function displayVideos() {
-  videosContainer.innerHTML = ""; // Clear previous content
-
-  videos = [
-    "ml-Ti89QeC8",
-    "JqAFGSMcq5w",
-    "h5Jyol0dj88",
-    "qwEapAm_1HM",
-    "o1elFPURix0",
-    "3TyFvCXQBgM",
-    "R4l5v4NDQgg",
-  ];
-
-  videos.forEach((video, index) => {
-    const videoDiv = document.createElement("div");
-    videoDiv.classList.add("video-item");
-
-    const iframe = document.createElement("iframe");
-    // if (index == 0) {
-    //   iframe.src = `https://www.youtube.com/embed/${video}?autoplay=1&`;
-    // } else {
-    iframe.src = `https://www.youtube.com/embed/${video}`;
-    // }
-    iframe.width = "560";
-    iframe.height = "315";
-    iframe.frameborder = "0";
-    iframe.allowFullscreen = true;
-
-    videoDiv.appendChild(iframe);
-    videosContainer.appendChild(videoDiv);
-  });
-}
-
-// displayPanchPokhariVideos();
-// displayLatestVideos();
-// displayVideos();
-
-// Load the YouTube API client
-//  gapi.load('client', fetchPopularVideos);
-
 let i = 0;
 let speed = 5;
 
@@ -215,14 +79,9 @@ function typeWriter() {
         word += txt.charAt(i);
         i++;
       }
-      document.getElementById("typewriter").innerHTML += "&nbsp;<b>" + word + "</b>";
+      document.getElementById("typewriter").innerHTML +=
+        "&nbsp;<b>" + word + "</b>";
       i--;
-    } else if (i == txt.length-1) {
-      document.getElementById("typewriter").innerHTML += `  <a
-      href="#"
-      class="u-btn u-button-style u-palette-5-base u-text-body-alt-color u-btn-1"
-      >read more</a
-    >`;
     } else {
       document.getElementById("typewriter").innerHTML += char;
     }

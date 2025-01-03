@@ -177,9 +177,8 @@
   background-image: none;
 }
 .u-section-2 .u-image-1 {
-  min-height: 406px;
+  max-height: 650px;
   background-image: url("./assets/icon/sticker.png");
-  background-position: center;
 }
 .u-section-2 .u-image-2 {
   min-height: 406px;
