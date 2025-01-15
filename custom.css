@@ -231,3 +231,6 @@ iframe {
     transform: translateY(0);
   }
 }
+.insta-reel{
+  z-index: 999;
+}

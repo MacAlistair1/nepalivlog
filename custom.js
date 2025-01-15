@@ -41,11 +41,6 @@ fetch("https://macalistair1.github.io/scrap-data/reel.json")
   })
   .then((data) => {
     if (data) {
-      galleryImage.style.backgroundImage = `url(${data.image})`;
-      galleryImage.style.cursor = "pointer";
-
-      galleryImage.addEventListener("click", () => {
-        location.href = data.url;
-      });
+      galleryImage.innerHTML = `<iframe width="400" height="450" src="${data.url}/embed" border="0" class="insta-reel"></iframe>`;
     }
   });
