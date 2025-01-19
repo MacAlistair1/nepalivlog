@@ -231,6 +231,14 @@ iframe {
     transform: translateY(0);
   }
 }
-.insta-reel{
+.insta-reel {
   z-index: 999;
+}
+
+.join {
+  color: #ffcc00;
+}
+
+.join-btn:hover {
+  transform: scale(1.25);
 }
